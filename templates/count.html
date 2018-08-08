@@ -1,0 +1,17 @@
+<h1>Count Page</h1>
+
+
+<h2>Original input text:</h2>
+{{ fulltext }}
+<h3>Number of words: {{ count }}</h3>
+<h3>Words Count:</h3>
+{% for word, counttotal in sortedwords %}
+{{word}} - {{ counttotal }}
+<br />
+{% endfor %}
+<br />
+<a href="{% url 'homepage' %}">Homepage</a>
+<!-- Isto foi uma maneira de tentar fazer um botao, funciona mas não usei "atags"-->
+<!--<form action="{% url 'homepage' %}">
+        <input type="submit" value="Homepage"/>
+</form>-->

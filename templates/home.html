@@ -1,0 +1,22 @@
+<h1>First Project in Django</h1>
+<h2>Name of the Project:Word Count</h2>
+
+{{hithere}}
+
+{{form}}
+
+<p>Let's Play. Write word i am gonna count it for you</p>
+
+<form action="{% url 'count' %}">
+    <textarea cols="40" rows="5" name="fulltext"></textarea>
+    <br/>
+    <input type="submit" value="Count!"/>
+</form>
+
+<form action="{% url 'homepage' %}">
+    <input type="submit" value="Clear"/>
+</form>
+
+<form action="{% url 'aboutme' %}">
+    <input type="submit" value="AboutMe"/>
+</form>
